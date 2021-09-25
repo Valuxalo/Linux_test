@@ -2,7 +2,7 @@
 import requests
 import re
 def url_check(a):
-    pattern = r"http.*?html"
+    pattern = r"href=.*?html"
     s_url = []
     res = requests.get(a)
     st = res.status_code
